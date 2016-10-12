@@ -5,9 +5,9 @@ export class Contact {
 }
 
 const CONTACTS: Contact[] = [
-    new Contact (22, 'Mickey Mouse'),  
-    new Contact(44, 'John Smith'), 
-    new Contact(23, 'Mike Sharp')
+    new Contact (1, 'Mickey Mouse'),  
+    new Contact(2, 'John Smith'), 
+    new Contact(3, 'Mike Sharp')
 ]; 
 
 const FETCH_LATENCY = 500; 
@@ -25,4 +25,6 @@ export class ContactService {
         return this.getContacts()
             .then(heroes => heroes.find(hero => hero.id === +id)); 
     }
+
+  
 }
